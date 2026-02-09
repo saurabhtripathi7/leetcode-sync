@@ -14761,7 +14761,7 @@ function addToSubmissions(params) {
  {
     submissionTimestamp = Number(submission.timestamp);
     if (submissionTimestamp <= lastTimestamp) {
-      return false;
+      continue;
     }
     if (submission.statusDisplay !== "Accepted") {
       continue;
@@ -19615,3 +19615,4 @@ main().catch((error) => {
 module.exports = __webpack_exports__;
 /******/ })()
 ;
+
